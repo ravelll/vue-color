@@ -1,9 +1,9 @@
-import { shallow } from 'vue-test-utils'
+import { shallow } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 
-import EditableInput from '../EditableInput'
+import EditableInput from '../../../src/components/common/EditableInput'
 
-describe('Checkboard.vue', () => {
+describe('EditableInput.vue', () => {
   let wrapper
 
   beforeEach(() => {

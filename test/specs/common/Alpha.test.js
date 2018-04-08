@@ -2,9 +2,9 @@ import { shallow } from 'vue-test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import randomInt from 'random-int'
 
-import Alpha from '../Alpha'
+import Alpha from '../../../src/components/common/Alpha'
 
-describe('Checkboard.vue', () => {
+describe('Alpha.vue', () => {
   let wrapper
 
   beforeEach(() => {
@@ -36,7 +36,7 @@ describe('Checkboard.vue', () => {
     })
 
     const pointer = wrapper.find('.vc-alpha-pointer')
-    expect(pointer.hasStyle('left', '0%')).toBe(true)
+    expect(pointer.element.style.left).toBe('0%')
 
     wrapper.setProps({
       color: {
@@ -51,11 +51,10 @@ describe('Checkboard.vue', () => {
 
     wrapper.vm.handleChange({pageX: -1, preventDefault () {}})
     expect(wrapper.vm.$data._color.a).toBe(0)
-    // expect(pointer.hasStyle('left', '0%')).toBe(true)
 
     wrapper.vm.$refs.container = { clientWidth: 100, getBoundingClientRect () { return { left: 0 } } }
     wrapper.vm.handleChange({pageX: 101, preventDefault () {}})
     expect(wrapper.vm.$data._color.a).toBe(1)
-    expect(pointer.hasStyle('left', '100%')).toBe(true)
+    expect(pointer.element.style.left).toBe('100%')
   })
 })

@@ -1,13 +1,13 @@
 import { shallow } from 'vue-test-utils'
 import { createRenderer } from 'vue-server-renderer'
 
-import Checkboard from '../Checkboard'
+import Saturation from '../../../src/components/common/Saturation'
 
-describe('Checkboard.vue', () => {
+describe('Saturation.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallow(Checkboard)
+    wrapper = shallow(Saturation)
   })
 
   test('renders correctly', () => {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkboard.vue renders correctly 1`] = `
+exports[`Alpha.vue renders correctly 1`] = `
 <div class="vc-alpha">
     <div class="vc-alpha-checkboard-wrap">
         <!---->

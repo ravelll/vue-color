@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkboard.vue renders correctly 1`] = `
+exports[`EditableInput.vue renders correctly 1`] = `
 <div class="vc-editable-input">
     <input class="vc-input__input">
     <!----><span class="vc-input__label">test</span> <span class="vc-input__desc"></span></div>
