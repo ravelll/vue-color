@@ -55,7 +55,7 @@ export default {
     color: {
       type: [String, Object],
       default () {
-        return '#194d33'
+        return _colorChange('#194d33')
       }
     }
   },

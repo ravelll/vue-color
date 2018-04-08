@@ -4,7 +4,7 @@ exports[`Saturation.vue renders correctly 1`] = `
 <div class="vc-saturation" style="background:hsl(150, 100%, 50%);">
     <div class="vc-saturation--white"></div>
     <div class="vc-saturation--black"></div>
-    <div class="vc-saturation-pointer" style="top:70.80392156862746%;left:67.53246753246754%;">
+    <div class="vc-saturation-pointer" style="top:70.804%;left:67.53212346006093%;">
         <div class="vc-saturation-circle"></div>
     </div>
 </div>

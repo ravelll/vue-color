@@ -7,7 +7,7 @@ exports[`Alpha.vue renders correctly 1`] = `
     </div>
     <div class="vc-alpha-gradient" style="background:linear-gradient(to right, rgba(25,77,51, 0) 0%, rgba(25,77,51, 1) 100%);"></div>
     <div class="vc-alpha-container">
-        <div class="vc-alpha-pointer" style="left:NaN%;">
+        <div class="vc-alpha-pointer" style="left:100%;">
             <div class="vc-alpha-picker"></div>
         </div>
     </div>
