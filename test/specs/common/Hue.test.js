@@ -1,4 +1,4 @@
-import { shallow } from 'vue-test-utils'
+import { shallow } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import randomInt from 'random-int'
 
@@ -37,7 +37,7 @@ describe('Hue.vue', () => {
     })
 
     const pointer = wrapper.find('.vc-hue-pointer')
-    expect(pointer.hasStyle('bottom', '0%')).toBe(true)
+    expect(pointer.element.style.bottom).toBe('0%')
 
     wrapper.setProps({
       direction: 'horizontal',
@@ -48,7 +48,7 @@ describe('Hue.vue', () => {
       }
     })
 
-    expect(pointer.hasStyle('left', '0%')).toBe(true)
+    expect(pointer.element.style.left).toBe('0%')
   })
 
   test('drag', () => {

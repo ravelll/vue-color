@@ -1,4 +1,4 @@
-import { shallow } from 'vue-test-utils'
+import { shallow } from '@vue/test-utils'
 import { createRenderer } from 'vue-server-renderer'
 import randomInt from 'random-int'
 
@@ -47,7 +47,7 @@ describe('Alpha.vue', () => {
       }
     })
 
-    expect(pointer.hasStyle('left', '100%')).toBe(true)
+    expect(pointer.element.style.left).toBe('100%')
 
     wrapper.vm.handleChange({pageX: -1, preventDefault () {}})
     expect(wrapper.vm.$data._color.a).toBe(0)
