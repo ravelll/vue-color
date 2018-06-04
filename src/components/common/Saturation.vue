@@ -56,7 +56,8 @@ export default {
         left = 0
       } else if (left > containerWidth) {
         left = containerWidth
-      } else if (top < 0) {
+      }
+      if (top < 0) {
         top = 0
       } else if (top > containerHeight) {
         top = containerHeight
